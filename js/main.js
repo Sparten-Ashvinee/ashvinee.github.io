@@ -68,6 +68,7 @@
   let typingTimer;
 
   function type() {
+    clearTimeout(typingTimer);
     const current = phrases[phraseIdx];
     if (deleting) {
       charIdx--;
